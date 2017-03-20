@@ -39,7 +39,7 @@ class DbConnection
 	function dbGetEventDescription($id)
 	{
 		$sql = "SELECT p.id as idEvents, p.post_title as NameEnglish, ".
-				" e.post_id, e.country as Country, e.start as DateStart, e.end as DateEnd, e.contact_url as Website".
+				" e.post_id, e.country as Country, e.start as DateStart, e.end as DateEnd, e.contact_url as Website, e.latitude, e.longitude".
 				" from wordpress.wp_posts p inner join wordpress.wp_ai1ec_events e on ( p.id = e.post_id)".
 				" where p.id=".$id;
 		//$sql = "SELECT idEvents,NameEnglish, DateStart, DateEnd, countries.Country, Website FROM events inner join countries on events.Countries_idCountries = countries.idCountries WHERE idEvents=".$id;

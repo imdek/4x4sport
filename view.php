@@ -29,9 +29,9 @@ class ViewTable
 class ViewEvent
 {
 
-	function viewEventDescription($result)
+	function viewEventDescription($row)
 	{
-		$row = $result->fetch_assoc();
+		
 		$mysqldatestart = date("Y-m-d", $row["DateStart"] );
 		$mysqldateend = date( 'Y-m-d', $row["DateEnd"] );
 		
@@ -55,6 +55,25 @@ class ViewEvent
 		}*/
 		echo "</tbody></table>";
 	}
+	
+	function viewEventMap($row)
+	{
+		/*<script>
+		var mapCanvas = document.getElementById("map");
+		var mapOptions = {
+			center: new google.maps.LatLng(51.5, -0.2), zoom: 15
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+		</script>
+		*/
+		
+		echo "<script>\nvar mapCanvas = document.getElementById(\"map\");\nvar mapOptions = {\ncenter: new google.maps.LatLng(";
+		echo $row["latitude"];
+		echo " , ";
+		echo $row["longitude"];
+		echo "), zoom: 15\n}\nvar map = new google.maps.Map(mapCanvas, mapOptions);\n</script>";
+	}
+	
 
 }
 

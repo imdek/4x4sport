@@ -68,18 +68,13 @@
 		$result = $db->dbGetEventDescription($id);
 		
 		$vt = new ViewEvent();
-		$vt->viewEventDescription($result);
-		
+		$row = $result->fetch_assoc();
+		$vt->viewEventDescription($rwo);
+		$vt->viewEventMap($row);
 		$db->dbClose();      
 		?>  
 		
-		<script>
-		var mapCanvas = document.getElementById("map");
-		var mapOptions = {
-			center: new google.maps.LatLng(51.5, -0.2), zoom: 15
-		}
-		var map = new google.maps.Map(mapCanvas, mapOptions);
-		</script>
+		
 		    
       </tbody>
     </table>
