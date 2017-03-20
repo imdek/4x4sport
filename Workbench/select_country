@@ -1,0 +1,2 @@
+
+select events.NameEnglish, events.DateStart, countries.Country from events inner join countries on events.Countries_idCountries = countries.idCountries;
