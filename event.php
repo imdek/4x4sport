@@ -52,12 +52,9 @@
 	</nav>
 	</header>
 <body>
-
 <div class="container">
-<!--  <h1>Events</h1>-->
-   <div class="table-responsive">
-    <table class="table table-striped table-hover">
-      <tbody>
+<div class="row">
+
 		<?php
 		$id =  htmlspecialchars($_GET["event"]);
 		include 'model.php';
@@ -69,17 +66,16 @@
 		
 		$vt = new ViewEvent();
 		$row = $result->fetch_assoc();
-		//$vt->viewEventDescription($rwo);
+		$vt->viewEventDescription($row);
 		$vt->viewEventMap($row);
 		$db->dbClose();      
-		?>  
-		
-		
-		    
-      </tbody>
-    </table>
-   </div>
-  </div>
+		?> 
+</div>
+<div class="row">
+<div class="col-sm-12" style="background-color: yellow">
+<a>nothing</a></div>
+</div>	
+</div>
 <?php
 include 'footer.php';
 ?>

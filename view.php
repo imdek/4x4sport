@@ -28,32 +28,35 @@ class ViewTable
 
 class ViewEvent
 {
+	function viewEventWithMap($row)
+	{
+		viewEventDescription($row);
 
+	}
+	
 	function viewEventDescription($row)
 	{
 		
 		$mysqldatestart = date("Y-m-d", $row["DateStart"] );
 		$mysqldateend = date( 'Y-m-d', $row["DateEnd"] );
-		
-	
+		echo "<div class= \"col-sm-8\">";
+		echo "<h2>".$row["NameEnglish"]."</h2>";
+		echo "From ".$mysqldatestart."<br>";
+		echo "To ".$mysqldateend."\n";
+		echo "</div>";
+	/*
 		echo " <table class=\"table table-striped\"><tbody>\n";
 		echo "<tr><td><h1>".$row["NameEnglish"]."</h1></td>";
-		echo "<td><div id=\"map\" style=\"width:400px;height:400px\"></div></td>";
+		echo "<td><div id=\"map\" style=\"width:400px;height:400px\">";
+		viewEventMap($row);
+		echo "</div></td>";
 		echo "</tr>\n";
 		echo "<tr><td>From ".$mysqldatestart."</td>";
 		echo "<td>To ".$mysqldateend." </td></tr>\n";
 		
 
-		/*
-		while($row = $result->fetch_assoc()) {
-			$id = $row["idEvents"];
-			$phpdatestart = strtotime( $row["DateStart"] );
-			$mysqldatestart = date( 'Y-m-d', $phpdatestart );
-			$phpdateend = strtotime( $row["DateEnd"] );
-			$mysqldateend = date( 'Y-m-d', $phpdateend );
-			echo "<tr><td>".$this->prepEvent($id,$row["NameEnglish"]). "</a> </td><td> " .$mysqldatestart. "</td><td>" .$mysqldateend. "</td><td>".$row["Country"]."</td></tr>";
-		}*/
 		echo "</tbody></table>";
+	*/
 	}
 	
 	function viewEventMap($row)
@@ -66,12 +69,15 @@ class ViewEvent
 		var map = new google.maps.Map(mapCanvas, mapOptions);
 		</script>
 		*/
-		
+		echo "<div class=\"col-sm-4\">";
+		echo "<div id=\"map\" style=\"width:400px;height:400px\">";
 		echo "<script>\nvar mapCanvas = document.getElementById(\"map\");\nvar mapOptions = {\ncenter: new google.maps.LatLng(";
 		echo $row["latitude"];
 		echo " , ";
 		echo $row["longitude"];
 		echo "), zoom: 12\n}\nvar map = new google.maps.Map(mapCanvas, mapOptions);\n</script>";
+		echo "</div>";
+		echo "</div>";
 	}
 	
 
