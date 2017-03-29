@@ -41,8 +41,8 @@ class ViewEvent
 		$mysqldateend = date( 'Y-m-d', $row["DateEnd"] );
 		echo "<div class= \"col-sm-8\">";
 		echo "<h2>".$row["NameEnglish"]."</h2>";
-		echo "From ".$mysqldatestart."<br>";
-		echo "To ".$mysqldateend."\n";
+		echo "<h4>Date: ".$mysqldatestart;
+		echo " - ".$mysqldateend."</h4>\n";
 		echo "</div>";
 	/*
 		echo " <table class=\"table table-striped\"><tbody>\n";
@@ -69,13 +69,21 @@ class ViewEvent
 		var map = new google.maps.Map(mapCanvas, mapOptions);
 		</script>
 		*/
+		
 		echo "<div class=\"col-sm-4\">";
 		echo "<div id=\"map\" style=\"width:400px;height:400px\">";
 		echo "<script>\nvar mapCanvas = document.getElementById(\"map\");\nvar mapOptions = {\ncenter: new google.maps.LatLng(";
 		echo $row["latitude"];
 		echo " , ";
 		echo $row["longitude"];
-		echo "), zoom: 12\n}\nvar map = new google.maps.Map(mapCanvas, mapOptions);\n</script>";
+		echo "), zoom: 5\n}\nvar map = new google.maps.Map(mapCanvas, mapOptions);\n";
+		echo "var marker= new google.maps.Marker({ position: new google.maps.LatLng(";
+		echo $row["latitude"];
+		echo " , ";
+		echo $row["longitude"];
+		echo "), map: map, title: 'start'});";
+		
+		echo "</script>";
 		echo "</div>";
 		echo "</div>";
 	}
