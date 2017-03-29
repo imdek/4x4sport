@@ -36,12 +36,12 @@ class ViewEvent
 		$mysqldateend = date( 'Y-m-d', $row["DateEnd"] );
 		
 	
-		echo " <table class=\"table table-striped\"><tbody>";
+		echo " <table class=\"table table-striped\"><tbody>\n";
 		echo "<tr><td><h1>".$row["NameEnglish"]."</h1></td>";
 		echo "<td><div id=\"map\" style=\"width:400px;height:400px\"></div></td>";
-		echo "</tr>";
+		echo "</tr>\n";
 		echo "<tr><td>From ".$mysqldatestart."</td>";
-		echo "<td>To ".$mysqldateend." </td></tr>";
+		echo "<td>To ".$mysqldateend." </td></tr>\n";
 		
 
 		/*
@@ -71,7 +71,7 @@ class ViewEvent
 		echo $row["latitude"];
 		echo " , ";
 		echo $row["longitude"];
-		echo "), zoom: 15\n}\nvar map = new google.maps.Map(mapCanvas, mapOptions);\n</script>";
+		echo "), zoom: 12\n}\nvar map = new google.maps.Map(mapCanvas, mapOptions);\n</script>";
 	}
 	
 

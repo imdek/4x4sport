@@ -69,7 +69,7 @@
 		
 		$vt = new ViewEvent();
 		$row = $result->fetch_assoc();
-		$vt->viewEventDescription($rwo);
+		//$vt->viewEventDescription($rwo);
 		$vt->viewEventMap($row);
 		$db->dbClose();      
 		?>  
