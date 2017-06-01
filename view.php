@@ -44,31 +44,11 @@ class ViewEvent
 		echo "<h4>Date: ".$mysqldatestart;
 		echo " - ".$mysqldateend."</h4>\n";
 		echo "</div>";
-	/*
-		echo " <table class=\"table table-striped\"><tbody>\n";
-		echo "<tr><td><h1>".$row["NameEnglish"]."</h1></td>";
-		echo "<td><div id=\"map\" style=\"width:400px;height:400px\">";
-		viewEventMap($row);
-		echo "</div></td>";
-		echo "</tr>\n";
-		echo "<tr><td>From ".$mysqldatestart."</td>";
-		echo "<td>To ".$mysqldateend." </td></tr>\n";
-		
 
-		echo "</tbody></table>";
-	*/
 	}
 	
 	function viewEventMap($row)
 	{
-		/*<script>
-		var mapCanvas = document.getElementById("map");
-		var mapOptions = {
-			center: new google.maps.LatLng(51.5, -0.2), zoom: 15
-		}
-		var map = new google.maps.Map(mapCanvas, mapOptions);
-		</script>
-		*/
 		
 		echo "<div class=\"col-sm-4\">";
 		echo "<div id=\"map\" style=\"width:400px;height:400px\">";
