@@ -20,9 +20,6 @@ class ViewTable
 	{
 	return $country;
 	}
-
-
-	
 }
 
 

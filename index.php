@@ -1,5 +1,6 @@
+<?php header('Content-Type:text/html; charset=UTF-8');?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +41,7 @@
 	        <li class="active-link"><a href="#">item1</a></li>
 	        <li><a href="#">item2</a></li>
 	        <li><a href="#">item3</a></li>
-	      	<li><a class="navbar-brand" href="#"><img src="img/logo02.jpg"></a></li>
+	      	<li><a class="navbar-brand" href="#"><img src="img/logo_02.jpg"></a></li>
 	        <li><a href="#">item4</a></li>
 	        <li><a href="#">item5</a></li>
 	        <li><a href="#">item6</a></li>

@@ -1,3 +1,3 @@
 <?php
 ?>
-<div class="panel-footer">(c)2017</div>
+<div class="panel-footer">Эээээ(c)2017</div>
