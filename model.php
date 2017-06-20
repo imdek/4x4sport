@@ -17,6 +17,7 @@ class DbConnection
 		if ($this->conn->connect_error) {
 			die("Connection failed: " . $this->conn->connect_error);
 		}
+		mysqli_set_charset($this->conn,'utf8');
 	}
 	
 	
