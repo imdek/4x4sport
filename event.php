@@ -42,7 +42,6 @@
 	        <li class="active-link"><a href="#">item1</a></li>
 	        <li><a href="#">item2</a></li>
 	        <li><a href="#">item3</a></li>
-	      	<li><a class="navbar-brand" href="#"><img src="img/logo02.jpg"></a></li>
 	      	<li><a class="navbar-brand" href="#"><img src="img/logo03.jpg"></a></li>
 	        <li><a href="#">item4</a></li>
 	        <li><a href="#">item5</a></li>
