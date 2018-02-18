@@ -37,7 +37,7 @@
 	    </div>
 	
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse unscroll" id="bs-example-navbar-collapse-1">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 unscroll">
 	      <ul class="nav navbar-nav">
 	        <li class="active-link"><a href="#">item1</a></li>
 	        <li><a href="#">item2</a></li>
@@ -54,6 +54,19 @@
 
   
   <div class="container">
+
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<br><br><br><br><br> <br><br><br><br><br>
+	<p>Test</p>
+
 <!--  <h1>Events</h1>-->
    <div class="table-responsive">
     <table class="table table-striped table-hover">
@@ -81,16 +94,6 @@
   	<script src="bootstrap/js/main.js"></script>
  
  <?php include 'footer.php'; ?>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<br><br><br><br><br> <br><br><br><br><br>
-	<p>Test</p>
+	
  </body>
 </html>
