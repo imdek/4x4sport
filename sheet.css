@@ -1,3 +1,19 @@
 #unscroll {
-     position:fixed;
+     position: fixed;
+	 left: 4%;
+	 top: -5%;
+	 width: 92%;
+}
+
+#fixlogo {
+	position: fixed;
+	left: 45%;
+}
+#whitebar {
+	background-color: #FFF;
+	color: #FFF;
+	position:fixed;
+	top: 0%;
+	left= 50%;
+	width: 90%;
 }
