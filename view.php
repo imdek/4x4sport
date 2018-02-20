@@ -12,7 +12,7 @@ class ViewTable
 			$id = $row["idEvents"];
 			$mysqldatestart = date("Y-m-d", $row["DateStart"] );
 			$mysqldateend = date( 'Y-m-d', $row["DateEnd"] );
-			echo "<tr><td>".$this->prepEvent($id,$row["NameEnglish"]). "</a> </td><td> " .$mysqldatestart. "</td><td>" .$mysqldateend. "</td><td>".$row["Country"]."</td></tr>";
+			echo "<tr><td>".$this->prepEvent($id,$row["NameEnglish"]). "</a> </td><td> " .$mysqldatestart. "</td><td class=\"autohide\">" .$mysqldateend. "</td><td class=\"autohide\">".$row["Country"]."</td></tr>";
 		}
 	}
 

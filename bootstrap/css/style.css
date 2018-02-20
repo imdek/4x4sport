@@ -68,8 +68,12 @@ text-align: center;
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.autohide {
+	display: none;
+	}
 	
 }
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1035px) {
@@ -97,10 +101,13 @@ text-align: center;
 @media only screen and (max-width : 767px) {
 	.globe{
 		display: none;
+
 	}
-	.extrainfo{
-		display: none;
+
+	.autohide {
+	display: none;
 	}
+
 }
 
 /* Extra Small Devices, Phones */
