@@ -23,3 +23,11 @@
 	left= 50%;
 	width: 90%;
 }
+
+#dark {
+	background-color: none;	
+	color: #000;
+	border-color: #EEE;
+	border: 20px;
+	text-align: left;
+}
