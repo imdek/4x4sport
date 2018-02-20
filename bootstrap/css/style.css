@@ -98,6 +98,9 @@ text-align: center;
 	.globe{
 		display: none;
 	}
+	.extrainfo{
+		display: none;
+	}
 }
 
 /* Extra Small Devices, Phones */
