@@ -5,9 +5,15 @@
 	 width: 92%;
 }
 
-#fixlogo {
-	position: fixed;
-	left: 45%;
+#fixlogobig {
+	margin: auto;
+	margin-left: 50%;
+	margin-right: auto;
+}
+#fixlogosmall {
+	margin: auto;
+	margin-left: 50%;
+	margin-right: auto;
 }
 #whitebar {
 	background-color: #FFF;
@@ -17,4 +23,3 @@
 	left= 50%;
 	width: 90%;
 }
-
