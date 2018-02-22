@@ -19,7 +19,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
     
-    <title>4x4sport.info@Facebook</title>
+    <title>4x4sport.info@Discord</title>
 </head>
 
 <body id="discordbackground">
@@ -33,10 +33,10 @@
 				</div>
 				<div class="col-md-8">
 					<h4 id="discordwhite">We are now availible on Discord!</h1>
-					Join our discord <a href="#">here</a>.
+					Join our discord <a href="https://discord.gg/eUShfjr">here</a>.
 					<h4 id="discordwhite">What is discord?</h4>
 					It's a free program that lets you create and join servers with text- and voicechats for free.
-					You can download it from <a href="#">here</a>.
+					You can download it from <a href="https://discordapp.com/">here</a>.
 				</div>
 			</div>
 	</div>
