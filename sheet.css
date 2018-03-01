@@ -1,25 +1,41 @@
 #unscroll {
      position: fixed;
 	 left: 4%;
-	 top: -5%;
+	 top: -50px;
 	 width: 92%;
+	z-index: 999;
 }
 
-#fixlogobig {
-	margin: auto;
-	margin-left: 50%;
-	margin-right: auto;
-}
-#fixlogosmall {
-	margin: auto;
-	margin-left: 50%;
-	margin-right: auto;
-}
+#fixlogobig { 
+  margin: auto; 
+  margin-left: 50%; 
+  margin-right: auto; 
+} 
+#fixlogosmall { 
+  margin: auto; 
+  margin-left: 50%; 
+  margin-right: auto; 
+} 
 #whitebar {
-	background-color: #FFF;
-	color: #FFF;
+	background-color: #ffffff;
+	color: #ffffff;
 	position:fixed;
 	top: 0%;
 	left= 50%;
 	width: 90%;
+}
+
+#dark {
+	background-color: none;	
+	color: #000;
+	border-color: #EEE;
+	border: 20px;
+	text-align: left;
+}
+
+
+#foot {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
 }

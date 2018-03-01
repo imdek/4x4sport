@@ -24,8 +24,6 @@
 <body>
 <?php include 'headerMenu.php'; ?>
 
-	<br><br><br><br><br>
-	<br><br><br><br><br>
   <div class="container">
 <!--  <h1>Events</h1>-->
    <div class="table-responsive">
@@ -52,7 +50,8 @@
    <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>  
   	<script src="bootstrap/js/main.js"></script> 
- 
+ <br><br>
+ <br><br>
  <?php include 'footer.php'; ?>
 	
  </body>
