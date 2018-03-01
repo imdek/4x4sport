@@ -17,7 +17,7 @@
             <img src="img/logo03.png"> 
         </center> 
         <ul class="nav navbar-nav"> 
-          <li class="active-link"><a href="#">item1</a></li> 
+          <li class="active-link"><a href="index.php">Main Page</a></li> 
           <li><a href="#">item2</a></li> 
           <li><a href="#">item3</a></li> 
           <li><a href="#">item4</a></li> 
