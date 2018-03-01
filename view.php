@@ -22,40 +22,51 @@ class ViewTable
 	}
 }
 
-
 class ViewEvent
 {
-	function viewEventWithMap($row)
+	//$row = "";
+	
+	function __construct ($r){
+		$this->row = $r;
+	}
+	
+	function Name (){
+		return "miaou ".$this->row["NameEnglish"];
+	}
+	
+	function viewEventWithMap()
 	{
-		viewEventDescription($row);
+		viewEventDescription($this->row);
 
 	}
 	
-	function viewEventDescription($row)
+	function viewEventDescription()
 	{
 		
-		$mysqldatestart = date("Y-m-d", $row["DateStart"] );
-		$mysqldateend = date( 'Y-m-d', $row["DateEnd"] );
-		echo "<div class= \"col-sm-8\">";
-		echo "<h2>".$row["NameEnglish"]."</h2>";
-		echo "<h4>Date: ".$mysqldatestart;
-		echo " - ".$mysqldateend."</h4>\n";
-		echo "</div>";
+		$mysqldatestart = date('d m Y', $this->row["DateStart"] );
+		$mysqldateend = date( 'd m Y', $this->row["DateEnd"] );
+		/*echo "<div class= \"col-md-8\">";
+		echo "<h2>".$this->row["NameEnglish"]."</h2>";
+		echo "<h4>From<br>";
+		echo "<- ".$mysqldatestart." -><br>";
+		echo "to<br>";
+		echo "<- ".$mysqldateend." -></h4>\n";
+		echo "</div>";*/
 
 	}
 	
-	function viewEventMap($row)
+	function viewEventMap()
 	{
 		
-		echo "<div class=\"col-sm-4\">";
+		echo "<div class=\"col-md-4\">";
 		echo "<div id=\"map\" style=\"width:400px;height:400px\">";
 		echo "<script>\nvar mapCanvas = document.getElementById(\"map\");\nvar mapOptions = {\ncenter: new google.maps.LatLng(";
-		echo $row["latitude"];
+		echo $this->row["latitude"];
 		echo " , ";
-		echo $row["longitude"];
+		echo $this->row["longitude"];
 		echo "), zoom: 5\n}\nvar map = new google.maps.Map(mapCanvas, mapOptions);\n";
 		echo "var marker= new google.maps.Marker({ position: new google.maps.LatLng(";
-		echo $row["latitude"];
+		echo $this->row["latitude"];
 		echo " , ";
 		echo $row["longitude"];
 		echo "), map: map, title: 'start'});";
