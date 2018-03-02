@@ -39,3 +39,26 @@
 	bottom: 0px;
 	width: 100%;
 }
+
+#sorting {
+	
+	position: fixed;
+	background-color:#FFF;
+	right: 0px;
+	width: 10%;
+	top: 30pp;
+	height:50%;
+	border: 3px solid #EEE;
+	border-radius: 5px;
+}
+#sortbutton {
+	background-color: #ffa500;
+	position: relative;
+	width: 90%;
+	color: #000;
+}
+@media only screen and (max-width: 1026px) {
+	#sorting {
+		display: none;
+	}
+}

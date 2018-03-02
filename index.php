@@ -23,6 +23,7 @@
 </head>
 <body>
 <?php include 'headerMenu.php'; ?>
+<?php include 'sorting.php'; ?>	
 
   <div class="container">
 <!--  <h1>Events</h1>-->
