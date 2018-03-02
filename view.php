@@ -31,7 +31,13 @@ class ViewEvent
 	}
 	
 	function Name (){
-		return "miaou ".$this->row["NameEnglish"];
+		return "".$this->row["NameEnglish"];
+	}
+	function StartDate (){
+		return "".date('d.m.Y', $this->row["DateStart"] )."";
+	}
+	function EndDate (){
+		return "".date('d.m.Y', $this->row["DateEnd"] )."";
 	}
 	
 	function viewEventWithMap()
@@ -43,9 +49,9 @@ class ViewEvent
 	function viewEventDescription()
 	{
 		
-		$mysqldatestart = date('d m Y', $this->row["DateStart"] );
+		/*$mysqldatestart = date('d m Y', $this->row["DateStart"] );
 		$mysqldateend = date( 'd m Y', $this->row["DateEnd"] );
-		/*echo "<div class= \"col-md-8\">";
+		echo "<div class= \"col-md-8\">";
 		echo "<h2>".$this->row["NameEnglish"]."</h2>";
 		echo "<h4>From<br>";
 		echo "<- ".$mysqldatestart." -><br>";

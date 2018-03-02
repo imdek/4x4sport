@@ -40,16 +40,17 @@
 		$row = $result->fetch_assoc();
 		$vt = new ViewEvent($row);
 		$vt->viewEventDescription();
-		$vt->viewEventMap();
+		
 		$db->dbClose();  
-	
-		echo "Mii".$vt->Name();
+		
+		echo "<div class=\"row\">";
+		echo "<div class=\"col-md-8\">";
+		echo "<h1>".$vt->Name()."</h1>";
+		echo "<h3>Goes from ".$vt->StartDate()." to ".$vt->EndDate()."</h3>";
+		echo "</div>";
+		$vt->viewEventMap();
+		echo "</div>";
 		?> 
-</div>
-<div class="row">
-<div class="col-md-12" style="background-color: yellow">
-<a>nothing</a></div>
-</div>	
 </div>
 <?php
 include 'footer.php';
