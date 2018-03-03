@@ -48,8 +48,9 @@
 	width: 10%;
 	top: 30pp;
 	height:50%;
-	border: 3px solid #EEE;
+	border: 3px solid #DDD;
 	border-radius: 5px;
+	padding: 1%;
 }
 #sortbutton {
 	background-color: #ffa500;
