@@ -12,9 +12,6 @@
 		<h4><input type="checkbox" name="Meeting" value="meeting"> Meeting</h4>
 		<button id="sortbutton">Find</button>
 	</center>
-<<<<<<< Updated upstream
-</div>
-=======
 </div>
 <script>
 	function find (){
@@ -27,4 +24,3 @@
 		xhr.send('Rally=rally&Trophy=trophy&Trial=trial&Meeting=meeting');
 	}
 </script>
->>>>>>> Stashed changes
