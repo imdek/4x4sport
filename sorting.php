@@ -12,4 +12,19 @@
 		<h4><input type="checkbox" name="Meeting" value="meeting"> Meeting</h4>
 		<button id="sortbutton">Find</button>
 	</center>
+<<<<<<< Updated upstream
 </div>
+=======
+</div>
+<script>
+	function find (){
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', 'index.php', true);
+		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		xhr.onload = function () {
+			console.log(xhr.responsetext);
+		};
+		xhr.send('Rally=rally&Trophy=trophy&Trial=trial&Meeting=meeting');
+	}
+</script>
+>>>>>>> Stashed changes
