@@ -1,0 +1,10 @@
+-add sorting
+	-4 types
+	-countries
+-add event description
+	-load from database
+	-change event screen design to fit
+-link up connections
+	-fix discord link
+	-set up links
+	-create rss blog
