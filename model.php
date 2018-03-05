@@ -3,7 +3,7 @@
 class DbConnection
 {
 	private $conn;
-	
+		
 	function dbConnect()
 	{
 		$servername = "localhost";
@@ -25,15 +25,18 @@ class DbConnection
 	 * Desc: Get list of events
 	 * Out : Name 
 	 */
-	function dbGetEvents()
+	function dbGetEvents($request)
 	{
 		//$sql = "SELECT idEvents,NameEnglish, DateStart, DateEnd, countries.Country, Website FROM events inner join countries on events.Countries_idCountries = countries.idCountries ORDER BY DateStart";
-		
+	    
 		$sql = "SELECT p.id as idEvents, p.post_title as NameEnglish, ".
-				" e.post_id, e.country as Country, e.start as DateStart, e.end as DateEnd, e.contact_url as Website".
+				" e.post_id, e.country as Country, e.start as DateStart, e.end as DateEnd, e.contact_url as Website,".
+				" e.type_trophy, e.type_trial, e.type_rally, e.type_event".
 				" from wordpress.wp_posts p inner join wordpress.wp_ai1ec_events e on ( p.id = e.post_id)".
-				" where post_type = \"ai1ec_event\" and post_status=\"publish\" order by DateStart;";
+				" where post_type = \"ai1ec_event\" and post_status=\"publish\" ".$request." order by DateStart;";
+		
 		$result = $this->conn->query($sql);
+		//die($sql);
 		return $result;
 	}
 	

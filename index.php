@@ -36,8 +36,15 @@
 		
 		$db = new DbConnection();
 		$db->dbConnect();
-		$result = $db->dbGetEvents();
+		$request = "";
+		if ($_GET["Rally"]) $request= $request." e.type_rally=1 OR";
+		if ($_GET["Trophy"]) $request= $request." e.type_trophy=1 OR";
+		if ($_GET["Trial"]) $request= $request." e.type_trial=1 OR";
+		if ($_GET["Meeting"]) $request= $request." e.type_event=1 OR";
 		
+		if (strlen($request) > 0 ) $request = " AND ( ".$request." false ) ";
+		
+		$result = $db->dbGetEvents($request);
 		$vt = new ViewTable();
 		$vt->viewEventsTable($result);
 		
