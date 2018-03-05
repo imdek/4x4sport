@@ -6,11 +6,13 @@
 		<h3>Sorting</h3>
 		I want to see:<br>
 	</center>
-	<h4><input type="checkbox" name="Rally" value="rally"> Rally</h4>
-	<h4><input type="checkbox" name="Trophy" value="trophy"> Trophy</h4>
-	<h4><input type="checkbox" name="Trial" value="trial"> Trial</h4>
-	<h4><input type="checkbox" name="Meeting" value="meeting"> Meeting</h4>
-	<button id="sortbutton">Find</button>
+	<form action="index.php" method="get">
+		<input type="checkbox" name="Rally">Rally<br />
+		<input type="checkbox" name="Trophy">Trophy<br />
+		<input type="checkbox" name="Meeting">Meeting<br />
+		<input type="checkbox" name="Trial">Trial<br />
+		<input type="Submit" value="Absenden" />
+	</form>
 	
 </div>
 <script>
